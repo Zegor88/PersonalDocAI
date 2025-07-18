@@ -172,6 +172,6 @@ For development, you can:
    uv pip install -e ".[dev]"
    ```
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
