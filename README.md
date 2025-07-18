@@ -97,7 +97,7 @@ The application is organized in a modular way:
 
 - Python ≥3.12
 - `uv` package manager
-- OpenAI API key
+- OpenAI API key (can be obtained from [OpenAI Platform](https://platform.openai.com/api-keys))
 
 ### Installation
 
@@ -107,10 +107,12 @@ The application is organized in a modular way:
    cd PersonalDocAI
    ```
 
-2. **Create a virtual environment:**
+2. **Create and activate virtual environment:**
    ```bash
-   # Create and activate virtual environment
+   # Create virtual environment
    uv venv
+   
+   # Activate environment
    source .venv/bin/activate  # On Unix/macOS
    # OR
    .venv\Scripts\activate     # On Windows
@@ -118,17 +120,47 @@ The application is organized in a modular way:
 
 3. **Install dependencies:**
    ```bash
-   # Install from pyproject.toml (development mode)
-   uv pip install -e .[dev]
+   # Install in development mode (recommended)
+   uv pip install -e ".[dev]"
    
    # OR install from requirements.txt
    uv pip install -r requirements.txt
    ```
 
+4. **Configure OpenAI API Key:**
+
+   There are several ways to set up the API key:
+
+   a) Through environment variable in terminal:
+   ```bash
+   export OPENAI_API_KEY='your-api-key'
+   ```
+
+   b) By creating a `.env` file in the project root:
+   ```plaintext
+   OPENAI_API_KEY=your-api-key
+   ```
+
+5. **Create necessary directories:**
+   ```bash
+   # Create directory for chat history
+   mkdir -p src/familydoc_ai/memory
+   ```
+
+### Running the Application
+
+1. **Prepare data:**
+   - Place your `.md` files in `data/input/`
+
+2. **Run the application:**
+   ```bash
+   python run.py
+   ```
+   After launch, the application will be available at: http://localhost:8501
 
 ### Development
 
-For development purposes, you can:
+For development, you can:
 
 1. **Update requirements.txt:**
    ```bash
@@ -137,17 +169,7 @@ For development purposes, you can:
 
 2. **Install development dependencies:**
    ```bash
-   uv pip install -e .[dev]
-   ```
-
-### Running the Application
-
-1. **Prepare your data:**
-   - Place `.md` files in `data/input/`
-
-2. **Start the application:**
-   ```bash
-   python run.py
+   uv pip install -e ".[dev]"
    ```
 
 ## 📄 License
