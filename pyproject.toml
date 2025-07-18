@@ -5,9 +5,9 @@ build-backend = "hatchling.build"
 [project]
 name = "familydoc-ai"
 version = "0.1.0"
-description = "A simple RAG-based AI therapist for the ReadyTensor course."
+description = "A RAG-based AI therapist for the ReadyTensor course."
 authors = [
-    { name = "Egor Zubenko", email = "ezubenko@gmail.com" },
+    { name = "Egor Zubenko", email = "zegor88@gmail.com" },
 ]
 readme = "README.md"
 requires-python = "~=3.12"
