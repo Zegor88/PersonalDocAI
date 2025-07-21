@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "familydoc-ai"
+name = "PersonalDocAI"
 version = "0.1.0"
 description = "A RAG-based AI therapist for the ReadyTensor course."
 authors = [
