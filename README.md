@@ -1,10 +1,10 @@
-# PrivateDocAI
+# PersonalDocAI
 
-PrivateDocAI is an intellectual assistant for individual therapy based on RAG (Retrieval Augmented Generation).
+PersonalDocAI is an intellectual assistant for individual therapy based on RAG (Retrieval Augmented Generation).
 
 ## Overview
 
-PrivateDocAI acts as your personal medical consultant, leveraging a comprehensive knowledge base of your health data:
+PersonalDocAI acts as your personal medical consultant, leveraging a comprehensive knowledge base of your health data:
 
 1. **Data Integration**
    - Medical history and current conditions
@@ -24,7 +24,7 @@ PrivateDocAI acts as your personal medical consultant, leveraging a comprehensiv
    - The agent references your health data during conversations
    - All interactions are private and stored locally
 
-> Note: PrivateDocAI is an assistant tool and should not replace professional medical consultation. Always verify medical decisions with qualified healthcare providers.
+> Note: PersonalDocAI is an assistant tool and should not replace professional medical consultation. Always verify medical decisions with qualified healthcare providers.
 
 ## Key Features
 
